@@ -1,3 +1,3 @@
 # Challenge-PHP
 Challenge PHP pendant la formation Simplon !
-Il se peut qu'il y ait des MAJ ultérieurement !
+MAJ 30/01/2017 : Formulaire de contact qui vérifie les champs de saisie !
