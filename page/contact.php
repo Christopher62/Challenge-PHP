@@ -102,13 +102,13 @@ include_once("connexionExo.php");
                 <form enctype="multipart/form-data" action="admin.php" method="POST" onsubmit="return verifForm(this)">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Pseudo:</label>
+                            <label>Pseudo :</label>
                             <input type="text" class="form-control" name="pseudo" onsubmit="verifPseudo(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>First Name:</label>
+                            <label>First Name :</label>
                             <input type="text" class="form-control" name="firstname" onsubmit="verifFname(this)">
                         </div>
                     </div>
@@ -120,25 +120,25 @@ include_once("connexionExo.php");
                     </div> -->
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Email Address:</label>
+                            <label>Email Address :</label>
                             <input type="text" class="form-control" name="email" value="@" onsubmit="verifMail(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Game play:</label>
+                            <label>Game played :</label>
                             <input type="text" class="form-control" name="game">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Birth Date:</label>
+                            <label>Birth Date :</label>
                             <input type="text" class="form-control" name="date" onsubmit="verifDate(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Message:</label>
+                            <label>Message :</label>
                             <textarea rows="5" cols="80" class="form-control" name="msg"></textarea>
                         </div>
                     </div>

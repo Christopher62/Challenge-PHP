@@ -15,18 +15,18 @@ $('#toTop').click(function() {
 
 function couleur(champ, erreur){
    if(erreur)
-      champ.style.color = "red";
+      champ.style.borderColor = "red";
    else
-      champ.style.color = "green";
+      champ.style.borderColor = "green";
 }
 
   function verifPseudo(champ){
     var regex1A = /^[aA-zZ]+[a-z]{1,}[0-9]{1,}$/;
     var regex1B = /^[aA-zZ]+[a-z]{1,}$/;
-     if(!regex1A.test(champ.value) && !regex1B.test(champ.value) || champ.value.length > 30)
+     if(!regex1A.test(champ.value) && !regex1B.test(champ.value) || champ.value.length > 30 || champ.value == "")
      {
         alert("Pseudo incorrect : il ne doit pas commencer par un nombre et n\'excède pas 30 caractères");
-        alert("Type de pseudo accepté : test, test123, Test, Test123");
+        alert("Type de pseudo accepté : test, test123, Test, Test123... Les \"specialchars\" ne sont pas autorisés");
         couleur(champ, true);
         return false;
      }
@@ -86,7 +86,7 @@ function verifForm(f){
       alert("Message envoyé");
       return true;
    }else{
-      alert("Veuillez remplir correctement tous les champs");
+      alert("Veuillez vérfier les champs de saisies en bordure rouge !");
       return false;
    }
 }
