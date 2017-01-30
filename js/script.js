@@ -50,7 +50,7 @@ function couleur(champ, erreur){
 }
 
 function verifMail(champ){
-   var regex3 = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
+   var regex3 = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,3}$/;
    if(!regex3.test(champ.value)){
       alert("Veuillez entrer un e-mail valide !");
       couleur(champ, true);
