@@ -26,6 +26,7 @@ function couleur(champ, erreur){
      if(!regex1A.test(champ.value) && !regex1B.test(champ.value) || champ.value.length > 30)
      {
         alert("Pseudo incorrect : il ne doit pas commencer par un nombre et n\'excède pas 30 caractères");
+        alert("Type de pseudo accepté : test, test123, Test, Test123");
         couleur(champ, true);
         return false;
      }
@@ -36,7 +37,7 @@ function couleur(champ, erreur){
   }
 
   function verifFname(champ){
-    var regex2 = /^[aA-zZ]+[a-z]{1,}$/;
+    var regex2 = /^[a-zA-Z]+[a-z]{1,}$/;
     if(!regex2.test(champ.value)){
       alert('Le prénom ne doit pas comporter de chiffre !');
       couleur(champ, true);
