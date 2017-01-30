@@ -99,7 +99,7 @@ include_once("connexionExo.php");
             <!-- Form Column -->
             <div class="col-md-4">
                 <!-- Contact form -->
-                <form enctype="multipart/form-data" action="contact.php" method="POST" id="contactForm" onsubmit="return verifForm(this)">
+                <form enctype="multipart/form-data" action="admin.php" method="POST" onsubmit="return verifForm(this)">
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Pseudo:</label>
@@ -116,7 +116,6 @@ include_once("connexionExo.php");
                         <div class="controls">
                             <label>Profil picture:</label>
                             <input type="file" class="form-control" name="profpic">
-                            <p class="help-block"></p>
                         </div>
                     </div> -->
                     <div class="control-group form-group">
@@ -134,7 +133,7 @@ include_once("connexionExo.php");
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Birth Date:</label>
-                            <input type="text" class="form-control" name="birth" onsubmit="verifDate(this)">
+                            <input type="text" class="form-control" name="date" onsubmit="verifDate(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
