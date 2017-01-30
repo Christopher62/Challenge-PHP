@@ -21,8 +21,9 @@ function couleur(champ, erreur){
 }
 
   function verifPseudo(champ){
-    var regex = /^[aA-zZ]{2,}$/;
-     if(!regex.test(champ.value) || champ.value.length > 30)
+    var regex1A = /^[aA-zZ]+[a-z]{1,}[0-9]{1,}$/;
+    var regex1B = /^[aA-zZ]+[a-z]{1,}$/;
+     if(!regex1A.test(champ.value) && !regex1B.test(champ.value) || champ.value.length > 30)
      {
         alert("Pseudo incorrect : il ne doit pas commencer par un nombre et n\'excède pas 30 caractères");
         couleur(champ, true);
