@@ -99,32 +99,30 @@ include_once("connexionExo.php");
             <!-- Form Column -->
             <div class="col-md-4">
                 <!-- Contact form -->
-                <form enctype="multipart/form-data" action="admin.php" method="POST" id="contactForm">
+                <form enctype="multipart/form-data" action="contact.php" method="POST" id="contactForm" onsubmit="return verifForm(this)">
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Pseudo:</label>
-                            <input type="text" class="form-control" name="pseudo">
-                            <p class="help-block"></p>
+                            <input type="text" class="form-control" name="pseudo" onsubmit="verifPseudo(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>First Name:</label>
-                            <input type="text" class="form-control" name="firstname">
-                            <p class="help-block"></p>
+                            <input type="text" class="form-control" name="firstname" onsubmit="verifFname(this)">
                         </div>
                     </div>
-                    <div class="control-group form-group">
+                    <!-- <div class="control-group form-group">
                         <div class="controls">
                             <label>Profil picture:</label>
                             <input type="file" class="form-control" name="profpic">
                             <p class="help-block"></p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Email Address:</label>
-                            <input type="email" class="form-control" name="email" value="@">
+                            <input type="text" class="form-control" name="email" value="@" onsubmit="verifMail(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">
@@ -136,7 +134,7 @@ include_once("connexionExo.php");
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Birth Date:</label>
-                            <input type="text" class="form-control" name="birth">
+                            <input type="text" class="form-control" name="birth" onsubmit="verifDate(this)">
                         </div>
                     </div>
                     <div class="control-group form-group">

@@ -23,30 +23,31 @@ $query = mysqli_query($cnx, 'SELECT * FROM custom');
 $color = mysqli_fetch_assoc($query);
 // var_dump($color);
 
-$user = isset($_POST['pseudo'])? $_POST['pseudo'] : "";
-$fname = isset($_POST['firstname'])? $_POST['firstname'] : "";
-$imgfile = isset($_POST['profpic'])? $_POST['profpic'] : "";
-$email = isset($_POST['email'])? $_POST['email'] : "";
-$games = isset($_POST['game'])? $_POST['game'] : "";
-$bdate = isset($_POST['birth'])? $_POST['birth'] : "";
-$msg = isset($_POST['msg'])? $_POST['msg'] : "";
+// $user = isset($_POST['pseudo'])? $_POST['pseudo'] : "";
+// $fname = isset($_POST['firstname'])? $_POST['firstname'] : "";
+// $imgfile = isset($_POST['profpic'])? $_POST['profpic'] : "";
+// $email = isset($_POST['email'])? $_POST['email'] : "";
+// $games = isset($_POST['game'])? $_POST['game'] : "";
+// $bdate = isset($_POST['birth'])? $_POST['birth'] : "";
+// $msg = isset($_POST['msg'])? $_POST['msg'] : "";
+//
+// if(isset($_POST['submit1'])&&$_SESSION['data']['id'])
+// {
+//
+//  $user = isset($_POST['pseudo'])?mysqli_real_escape_string($cnx,$_POST['pseudo']) : "";
+//  $fname = isset($_POST['firstname'])?mysqli_real_escape_string($cnx,$_POST['firstname']) : "";
+//  $imgfile = isset($_FILES['profilpic'])?mysqli_real_escape_string($cnx,$_FILES['profilpic']) : "";
+//  $email = isset($_POST['email'])?mysqli_real_escape_string($cnx,$_POST['email']) : "";
+//  $games = isset($_POST['game'])?mysqli_real_escape_string($cnx,$_POST['game']) : "";
+//  $bdate = isset($_POST['birth'])?mysqli_real_escape_string($cnx,$_POST['birth']) : "";
+//  $msg = isset($_POST['msg'])?mysqli_real_escape_string($cnx,$_POST['msg']) : "";
+//
+// $res3 = mysqli_query($cnx, "UPDATE infos SET pseudo='$user', prenom='$fname', imgprofil='$imgfile', mail='$email', jeux=$game, date_naissance='$bdate', message='$msg'");
+// }
+// $query2 = mysqli_query($cnx, 'SELECT * FROM infos');
+// $info = mysqli_fetch_assoc($query2);
+// var_dump($info);
 
-if(isset($_POST['submit1'])&&$_SESSION['data']['id'])
-{
-
- $user = isset($_POST['pseudo'])?mysqli_real_escape_string($cnx,$_POST['pseudo']) : "";
- $fname = isset($_POST['firstname'])?mysqli_real_escape_string($cnx,$_POST['firstname']) : "";
- $imgfile = isset($_FILES['profilpic'])?mysqli_real_escape_string($cnx,$_FILES['profilpic']) : "";
- $email = isset($_POST['email'])?mysqli_real_escape_string($cnx,$_POST['email']) : "";
- $games = isset($_POST['game'])?mysqli_real_escape_string($cnx,$_POST['game']) : "";
- $bdate = isset($_POST['birth'])?mysqli_real_escape_string($cnx,$_POST['birth']) : "";
- $msg = isset($_POST['msg'])?mysqli_real_escape_string($cnx,$_POST['msg']) : "";
-
-$res3 = mysqli_query($cnx, "UPDATE infos SET pseudo='$user', prenom='$fname', imgprofil='$imgfile', mail='$email', jeux=$game, date_naissance='$bdate', message='$msg'");
-}
-
-$query2 = mysqli_query($cnx, 'SELECT * FROM infos');
-$info = mysqli_fetch_assoc($query2);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
